@@ -10,8 +10,8 @@ function updateTimerDisplay() {
 let win = document.getElementById("winner")
 
 function winner(){
-    let h = document.getElementById("count-el-h")
-    let g = document.getElementById("count-el-g")
+    let h = parseInt(document.getElementById("count-el-h"))
+    let g = parseInt(document.getElementById("count-el-g"))
 
     if (h>g) {
         win.innerText = "Home Team Won!"

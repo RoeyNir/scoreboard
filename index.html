@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoreboard</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="center">
+        <h2 class="timer-text">Time Left On Clock:</h2>
+        <div id="timer" class="timer-box">60:00</div>
+    </div>
+
+    <p id="winner" class="winner-text"></p>
+
+    <div class="container">
+            <!-- קבוצת הבית -->
+            <div class="home">
+                <h1 class="scoreboard-text">HOME</h1>
+                <h2 id="count-el-h" class="scoreboard-box">0</h2>
+                <div class="button-group">
+                    <button onclick="addH(1)">+1</button>
+                    <button onclick="addH(2)">+2</button>
+                    <button onclick="addH(3)">+3</button>
+                </div>
+            </div>
+        
+            <!-- קבוצת האורחים -->
+            <div class="guest">
+                <h1 class="scoreboard-text">GUEST</h1>
+                <h2 id="count-el-g" class="scoreboard-box">0</h2>
+                <div class="button-group">
+                    <button onclick="addG(1)">+1</button>
+                    <button onclick="addG(2)">+2</button>
+                    <button onclick="addG(3)">+3</button>
+                </div>
+            </div>
+    </div>
+
+    <script src="timer.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,4 +1,4 @@
-let totalSeconds = 10 * 1; // 60 דקות = 3600 שניות
+let totalSeconds = 10 * 1; 
 let timerEl = document.getElementById("timer");
 
 function updateTimerDisplay() {
@@ -13,10 +13,12 @@ function winner(){
     let h = parseInt(document.getElementById("count-el-h").innerText)
     let g = parseInt(document.getElementById("count-el-g").innerText)
 
-    if (h>g) {
-        win.innerText = "Home Team Won!"
+    if (h > g) {
+        win.innerText = "Home Team Won!";
+    } else if (g > h) {
+        win.innerText = "Guest Team Won!";
     } else {
-        win.innerText = "Guest Team Won!"
+        win.innerText = "It's a Tie!";
     }
 }
 
@@ -33,5 +35,5 @@ function startCountdown() {
     }, 1000);
 }
 
-updateTimerDisplay(); // כדי להציג את השעה ההתחלתית לפני תחילת הספירה
+updateTimerDisplay(); 
 startCountdown();
